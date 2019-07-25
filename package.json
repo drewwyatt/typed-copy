@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Drew Wyatt <drew.j.wyatt@gmail.com>",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "@types/react": "^16.8.23",
     "prettier": "^1.18.2",
