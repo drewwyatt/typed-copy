@@ -7,4 +7,5 @@ export enum Foo {
 export enum Bar {
   Options = 'options',
   Colors = 'colors',
+  People = 'people',
 }

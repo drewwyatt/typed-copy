@@ -25,6 +25,11 @@
         "key": "colors",
         "value": "{color1, select, red {{color2, select, red {Red and Red make Red} yellow {Red and Yellow make Orange} blue {Red and Blue make Purple} other {Choose primary colors.}}}yellow {{color2, select, red {Yellow and Red make Orange} yellow {Yellow and Yellow make Yellow} blue {Yellow and Blue make Green} other {Choose primary colors.}}}blue {{color2, select, red {Blue and Red make Purple} yellow {Blue and Yellow make Green} blue {Blue and Blue make Blue} other {Choose primary colors.}}}}",
         "__typename": "Bar"
+      },
+      {
+        "key": "people",
+        "value": "{people_count, plural, one {{people_count} person here.} other {{people_count} people here.}}",
+        "__typename": "Bar"
       }
     ]
   }
