@@ -1,4 +1,4 @@
-import { uniq, prop, map, compose } from 'ramda'
+import { uniq, prop, map, compose, propEq } from 'ramda'
 import { writeFileSync } from 'fs'
 const copy: Copy = require('./copy')
 
@@ -9,4 +9,17 @@ const makeTypes = compose(
   uniq,
   map(prop('__typename')),
 )
-writeFileSync('src/types.generated', makeTypes(copy.data.items), 'utf8')
+
+const itemsOfType = (type: any) => copy.data.items.filter(propEq('__typename', type))
+
+const toEnum = (type: any): string => {
+  const keys = itemsOfType(type)
+  return `export enum ${type as string} {
+  ${keys.map(prop('key')).join(',\n  ')},
+}
+`
+}
+
+const types = makeTypes(copy.data.items)
+const things = types.map(toEnum)
+writeFileSync('src/types.generated.ts', things.join('\n'), 'utf8')

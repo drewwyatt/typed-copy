@@ -10,6 +10,11 @@
         "key": "helloWorld",
         "value": "Hello, world!",
         "__typename": "Foo"
+      },
+      {
+        "key": "somethingElse",
+        "value": "Something else.!",
+        "__typename": "Bar"
       }
     ]
   }
