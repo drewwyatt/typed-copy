@@ -4,15 +4,19 @@
   "license": "MIT",
   "author": "Drew Wyatt <drew.j.wyatt@gmail.com>",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && cp -R public/ dist/",
+    "gen-types": "yarn build && node dist/gen-types.js"
   },
   "devDependencies": {
+    "@types/ramda": "^0.26.18",
     "@types/react": "^16.8.23",
     "prettier": "^1.18.2",
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "@types/node": "^12.6.8",
     "messageformat-parser": "^4.1.2",
+    "ramda": "^0.26.1",
     "react": "^16.8.6"
   }
 }
