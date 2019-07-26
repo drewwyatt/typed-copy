@@ -1,10 +1,10 @@
 export enum Foo {
-  helloWorld,
-  currentTemperature,
-  dateOfBirth,
+  HelloWorld = 'helloWorld',
+  CurrentTemperature = 'currentTemperature',
+  DateOfBirth = 'dateOfBirth',
 }
 
 export enum Bar {
-  options,
-  colors,
+  Options = 'options',
+  Colors = 'colors',
 }
