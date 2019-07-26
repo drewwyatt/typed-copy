@@ -1,3 +1,3 @@
 declare module 'messageformat-parser' {
-  export const parse: (...args: string[]) => any
+  export const parse: (formatString: string) => any[]
 }
