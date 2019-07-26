@@ -2,18 +2,28 @@
   "data": {
     "items": [
       {
-        "key": "hostParty",
-        "value": "{gender_of_host, select, female { {num_guests, plural, offset:1 =0 {{host} does not give a party.} =1 {{host} invites {guest} to her party.} =2 {{host} invites {guest} and one other person to her party.} other {{host} invites {guest} and # other people to her party.}}} male { {num_guests, plural, offset:1 =0 {{host} does not give a party.} =1 {{host} invites {guest} to his party.} =2 {{host} invites {guest} and one other person to his party.} other {{host} invites {guest} and # other people to his party.}}} other { {num_guests, plural, offset:1 =0 {{host} does not give a party.} =1 {{host} invites {guest} to their party.} =2 {{host} invites {guest} and one other person to their party.} other {{host} invites {guest} and # other people to their party.}}}}",
-        "__typename": "Foo"
-      },
-      {
         "key": "helloWorld",
         "value": "Hello, world!",
         "__typename": "Foo"
       },
       {
-        "key": "somethingElse",
-        "value": "Something else.!",
+        "key": "currentTemperature",
+        "value": "Current temperature {temp}.",
+        "__typename": "Foo"
+      },
+      {
+        "key": "dateOfBirth",
+        "value": "Please confirm this is your date of birth: {dob, date}.",
+        "__typename": "Foo"
+      },
+      {
+        "key": "options",
+        "value": "You chose {selector, select, 1 {Option 1} other {an unsupported option.}}",
+        "__typename": "Bar"
+      },
+      {
+        "key": "colors",
+        "value": "{color1, select, red {{color2, select, red {Red and Red make Red} yellow {Red and Yellow make Orange} blue {Red and Blue make Purple} other {Choose primary colors.}}}yellow {{color2, select, red {Yellow and Red make Orange} yellow {Yellow and Yellow make Yellow} blue {Yellow and Blue make Green} other {Choose primary colors.}}}blue {{color2, select, red {Blue and Red make Purple} yellow {Blue and Yellow make Green} blue {Blue and Blue make Blue} other {Choose primary colors.}}}}",
         "__typename": "Bar"
       }
     ]

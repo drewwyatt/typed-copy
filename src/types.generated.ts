@@ -1,8 +1,10 @@
 export enum Foo {
-  hostParty,
   helloWorld,
+  currentTemperature,
+  dateOfBirth,
 }
 
 export enum Bar {
-  somethingElse,
+  options,
+  colors,
 }
